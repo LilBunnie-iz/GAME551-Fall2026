@@ -18,7 +18,7 @@
             <a href="index.html" aria-current="page">Home</a>
             <a href="work.html">Work</a>
             <a href="about.html">About</a>
-            <a class="nav-contact" href="work.html#reel">View reel <span aria-hidden="true">↗</span></a>
+            <a class="nav-contact" href="#reel">View reel <span aria-hidden="true">↘</span></a>
         </nav>
     </header>
 
@@ -48,15 +48,21 @@
                     </div>
                     <a class="text-link" href="work.html">See the reel <span aria-hidden="true">↗</span></a>
                 </div>
-                <a class="feature-card" href="work.html#reel">
-                    <span class="feature-star" aria-hidden="true">✳</span>
-                    <span class="feature-card-copy">
-                        <span class="caption-label">Featured work · 2025</span>
-                        <span class="feature-card-title">Animation Reel</span>
-                        <span class="feature-card-link">Watch the reel <span aria-hidden="true">↗</span></span>
-                    </span>
-                    <span class="feature-card-index" aria-hidden="true">01 / 01</span>
-                </a>
+                <figure class="reel" id="reel">
+                    <div class="reel-screen">
+                        <video controls playsinline preload="metadata" aria-label="Lily Meadows animation reel">
+                            <source src="AnimationReel.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <figcaption class="reel-caption">
+                        <div>
+                            <span class="caption-label">Animation · Character · Story</span>
+                            <span class="caption-title">Lily Meadows — Animation Reel</span>
+                        </div>
+                        <span class="reel-duration">0:47 <span aria-hidden="true">·</span> 2025</span>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
