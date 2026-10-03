@@ -149,6 +149,31 @@ a:focus-visible {
     background: #e9e9dc;
 }
 
+.resume-pdf-section {
+    padding: 0 0 76px;
+}
+
+.resume-pdf-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+}
+
+.resume-pdf-heading .eyebrow {
+    color: var(--muted);
+}
+
+.resume-pdf-viewer {
+    display: block;
+    width: 100%;
+    height: min(1100px, 120vh);
+    border: 1px solid var(--line);
+    background: #fff;
+}
+
 .resume-row {
     display: grid;
     grid-template-columns: 1fr 1.65fr;
@@ -809,6 +834,21 @@ h1 em,
 
     .resume-content {
         padding: 8px 0 64px;
+    }
+
+    .resume-pdf-section {
+        padding-bottom: 52px;
+    }
+
+    .resume-pdf-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .resume-pdf-viewer {
+        height: 75vh;
+        min-height: 480px;
     }
 
     .resume-row {
